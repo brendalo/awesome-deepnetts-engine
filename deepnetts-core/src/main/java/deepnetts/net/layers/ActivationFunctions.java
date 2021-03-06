@@ -63,4 +63,114 @@ public final class ActivationFunctions {
         }
         
         throw new DeepNettsException("Unknown transfer function type!");
+    }
     
+    public static final float prime(ActivationType type, float y) {
+        
+        switch(type) {
+            case SIGMOID:
+                 return sigmoidPrime(y);
+                
+            case TANH: 
+                return tanhPrime(y);
+                
+            case RELU:
+                return reluPrime(y);                
+                
+            case LINEAR:
+                return linearPrime(y);                
+        }
+        
+        throw new DeepNettsException("Unknown transfer function type!");
+    }    
+    
+    
+    /**
+     * Basic Sigmoid Function on interval (0..1). 
+     *       
+     *  y = 1 / (1+e^(-x))
+     * 
+     * TODO: slope, amplitude, translate? (all these params could be trainable...)
+     *       maybe add annotations so Type enums can be generated automatically
+     * 
+     * @param x
+     * @return value of sigmoid function calculated for input x
+     */
+    // @Activation("sigmoid")
+    public static final float sigmoid(final float x) {
+       return 1 / (1 + (float)Math.exp(-x));  
+    } 
+    
+    /**
+     * First derivative of sigmoid function .
+     * 
+     *  f1 = y(1-y)
+     * 
+     * @param y sigmoid function output
+     * @return first derivative of sigmoid
+     */
+    // @ActivationPrime("sigmoid")
+    public static final float sigmoidPrime(final float y) {
+       return y*(1-y);
+    } 
+            
+    /**
+     * Tanh function (sigmoid on interval (-1, 1)).
+     * 
+     *  y = ((e^2x)-1 ) / ((e^2x)+1)
+     * 
+     * TODO: amplitude, slope, +ax kako bi u izvodu imao +a za flatspot
+     * 
+     * @param x
+     * @return value of tanh function calculated for input x
+     */
+    public static final float tanh(final float x) {
+       // x = x*2/3;
+       // float a=1.7159;
+       final float e2x = (float)Math.exp(2*x);   
+       return (e2x-1) / (e2x+1); // calculate tanh 
+    } 
+    
+    /**
+     * First derivative of tanh function.
+     * 
+     * @param y
+     * @return 
+     */
+    public static final float tanhPrime(final float y) {     
+        return (1-y*y);
+    }
+        
+    public static final float relu(final float x) {
+       return Math.max(0, x);  
+    }     
+    
+    public static final float reluPrime(final float y) {
+       return ( y > 0 ? 1 : 0);
+    }         
+    
+    /**
+     * Linear activation function.
+     * y = x
+     * 
+     * TODO: y = kx + n (with k and n trainable)
+     * 
+     * @param x
+     * @return 
+     */
+    public static final float linear(final float x) {
+       return x;  
+    }     
+    
+    /**
+     * First derivative of linear function.
+     * For y = x, derivative is allways 1
+     * 
+     * @param y
+     * @return 
+     */
+    public static final float linearPrime(final float y) {
+       return 1;
+    }     
+        
+}

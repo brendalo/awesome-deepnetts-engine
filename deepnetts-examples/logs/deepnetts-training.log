@@ -686,4 +686,71 @@ Iteration:10, Time:550ms, TotalError:0.083108984, ErrorChange:-0.011557139
 Iteration:11, Time:548ms, TotalError:0.07383884, ErrorChange:-0.0092701465
 Iteration:12, Time:560ms, TotalError:0.06630897, ErrorChange:-0.0075298697
 Iteration:13, Time:548ms, TotalError:0.05998943, ErrorChange:-0.0063195378
-Iteration:14, Time:551ms, TotalError:0.054599475, ErrorChange:-0.00
+Iteration:14, Time:551ms, TotalError:0.054599475, ErrorChange:-0.005389955
+Iteration:15, Time:551ms, TotalError:0.050022054, ErrorChange:-0.0045774207
+Iteration:16, Time:553ms, TotalError:0.046077125, ErrorChange:-0.0039449297
+Iteration:17, Time:552ms, TotalError:0.04267983, ErrorChange:-0.0033972934
+Iteration:18, Time:546ms, TotalError:0.03967753, ErrorChange:-0.0030023009
+Iteration:19, Time:552ms, TotalError:0.0368929, ErrorChange:-0.0027846321
+Iteration:20, Time:550ms, TotalError:0.03438299, ErrorChange:-0.002509907
+Iteration:21, Time:547ms, TotalError:0.032145128, ErrorChange:-0.0022378638
+Iteration:22, Time:547ms, TotalError:0.030134635, ErrorChange:-0.0020104926
+Iteration:23, Time:552ms, TotalError:0.028329311, ErrorChange:-0.0018053241
+Iteration:24, Time:552ms, TotalError:0.026696198, ErrorChange:-0.0016331133
+Iteration:25, Time:547ms, TotalError:0.025219627, ErrorChange:-0.001476571
+Iteration:26, Time:561ms, TotalError:0.023876483, ErrorChange:-0.0013431441
+Iteration:27, Time:548ms, TotalError:0.022649275, ErrorChange:-0.0012272075
+Iteration:28, Time:547ms, TotalError:0.021523053, ErrorChange:-0.0011262223
+Iteration:29, Time:549ms, TotalError:0.020487793, ErrorChange:-0.00103526
+Iteration:30, Time:549ms, TotalError:0.01953163, ErrorChange:-9.561628E-4
+Total Training Time: 16761ms
+Training convolutional network with MNIST data set
+Loading images...
+Loaded 200 images
+Creating neural network...
+Training neural network
+Iteration:1, Time:3220ms, TotalError:2.3224602, ErrorChange:2.3224602
+Iteration:2, Time:3145ms, TotalError:2.215846, ErrorChange:-0.10661411
+Iteration:3, Time:3372ms, TotalError:2.0994163, ErrorChange:-0.116429806
+Iteration:4, Time:3160ms, TotalError:1.941814, ErrorChange:-0.15760231
+Iteration:5, Time:3176ms, TotalError:1.701314, ErrorChange:-0.24049997
+Iteration:6, Time:3001ms, TotalError:1.4032344, ErrorChange:-0.2980796
+Iteration:7, Time:3057ms, TotalError:1.1779697, ErrorChange:-0.22526467
+Loading images...
+Loaded 93 images
+Creating neural network...
+Training neural network
+Iteration:1, Time:1507ms, TotalError:0.56571263, ErrorChange:0.56571263
+Iteration:2, Time:1295ms, TotalError:0.4100163, ErrorChange:-0.15569633
+Iteration:3, Time:1089ms, TotalError:0.3043411, ErrorChange:-0.10567519
+Iteration:4, Time:924ms, TotalError:0.2341482, ErrorChange:-0.0701929
+Iteration:5, Time:987ms, TotalError:0.18634288, ErrorChange:-0.047805324
+Iteration:6, Time:1107ms, TotalError:0.15252517, ErrorChange:-0.03381771
+Iteration:7, Time:1018ms, TotalError:0.12788153, ErrorChange:-0.024643645
+Iteration:8, Time:1059ms, TotalError:0.109241, ErrorChange:-0.018640526
+Iteration:9, Time:966ms, TotalError:0.09466612, ErrorChange:-0.014574878
+Iteration:10, Time:1250ms, TotalError:0.083108984, ErrorChange:-0.011557139
+Iteration:11, Time:1263ms, TotalError:0.07383884, ErrorChange:-0.0092701465
+Iteration:12, Time:1263ms, TotalError:0.06630897, ErrorChange:-0.0075298697
+Iteration:13, Time:1161ms, TotalError:0.05998943, ErrorChange:-0.0063195378
+Iteration:14, Time:1144ms, TotalError:0.054599475, ErrorChange:-0.005389955
+Iteration:15, Time:1190ms, TotalError:0.050022054, ErrorChange:-0.0045774207
+Iteration:16, Time:1193ms, TotalError:0.046077125, ErrorChange:-0.0039449297
+Iteration:17, Time:1153ms, TotalError:0.04267983, ErrorChange:-0.0033972934
+Iteration:18, Time:1243ms, TotalError:0.03967753, ErrorChange:-0.0030023009
+Iteration:19, Time:1209ms, TotalError:0.0368929, ErrorChange:-0.0027846321
+Iteration:20, Time:870ms, TotalError:0.03438299, ErrorChange:-0.002509907
+Iteration:21, Time:1258ms, TotalError:0.032145128, ErrorChange:-0.0022378638
+Iteration:22, Time:1001ms, TotalError:0.030134635, ErrorChange:-0.0020104926
+Iteration:23, Time:1232ms, TotalError:0.028329311, ErrorChange:-0.0018053241
+Iteration:24, Time:1295ms, TotalError:0.026696198, ErrorChange:-0.0016331133
+Iteration:25, Time:1255ms, TotalError:0.025219627, ErrorChange:-0.001476571
+Iteration:26, Time:1311ms, TotalError:0.023876483, ErrorChange:-0.0013431441
+Iteration:27, Time:1262ms, TotalError:0.022649275, ErrorChange:-0.0012272075
+Iteration:28, Time:1257ms, TotalError:0.021523053, ErrorChange:-0.0011262223
+Iteration:29, Time:970ms, TotalError:0.020487793, ErrorChange:-0.00103526
+Iteration:30, Time:1170ms, TotalError:0.01953163, ErrorChange:-9.561628E-4
+Total Training Time: 34925ms
+Training convolutional network with MNIST data set
+Loading images...
+javax.imageio.IIOException: Can't read input file!
